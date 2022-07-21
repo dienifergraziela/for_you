@@ -1,0 +1,960 @@
+@import url('https://fonts.google.com/share?selection.family=Edu%20VIC%20WA%20NT%20Beginner');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*necessario pra criar um site responsivo*/
+}
+ 
+@media only screen and (min-width: 768px){
+    label{
+        display: none;
+    }
+
+    #logo{
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        background-color: #CD853F;
+        margin-bottom: 0.5vh;
+        align-items: center;
+    }
+ 
+    #logo img{
+        margin-left: 33vw;
+        padding: 3vh;
+    }
+
+    nav{
+        width: 100vw;
+        height: 10vh;
+        border-bottom: solid 0.1vh #CD853F;
+        background-color:  #DEB887;
+    }
+
+    nav li{
+        display: inline-block;
+        padding: 1vh;
+    }
+ 
+    nav li a{
+        font-size: 2vw;
+        align-items: center;
+        text-decoration: none;
+        color: #CD853F;
+        padding: 6.5vh;
+    }
+ 
+    nav li a:hover{
+        color: #8B4513;
+    }
+ 
+    body{
+        background-color: #FAFAD2;
+    }
+
+    /**/
+ 
+    div h1{
+        margin-left: 16vh;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+        text-shadow: 0.1vw 0.1vw #DEB887;
+    }
+ 
+    div img{
+        width: 25vw;
+        height: 50vh;
+        margin-left: 2.5vw;
+        margin-bottom: 1vh;
+        margin-top: 1.5vh;
+    }
+ 
+    div p{
+        margin-left: 2vw;
+        margin-right: 2vw;
+        text-align: center;
+    }
+ 
+    #Home{
+        height: 70vh;
+    }
+
+    #imagemHome{
+        width: 20vw;
+        height: 43vh;
+        display: inline-block;
+        margin-left: 15vw;
+        margin-top: 4vw;
+    }
+ 
+    #imagemHome img{
+        width: 20vw;
+        height: 40vh;
+        margin-left: 0vw;
+    }
+ 
+    #textoHome{
+        width: 35vw;
+        background-color: #DEB887;
+        float: right;
+        margin-right: 14vw;
+        margin-top: 14vh;
+    }
+ 
+    #textoHome p{
+        margin-bottom: 1vw;
+    }
+ 
+    .imagem{
+        background-color: #CD853F;
+        margin-bottom: 1vh;
+    }
+ 
+    #Compre{
+        height: 500vh;
+        background-color: #fff;
+    }
+ 
+    .imagemComprar img{
+        width: 15vw;
+        height: 30vh;
+        margin-top: 2vw;
+    }
+ 
+    .fraseCompra{
+        background-color: #CD853F;
+        margin-bottom: 0.5vh;
+    }
+ 
+    .produto{
+        width: 20vw;
+        background-color: #FAFAD2;
+        float: left;
+        margin-left: 3.7vw;
+        margin-bottom: 3vh;
+    }
+   
+    button{
+        width: 3vw;
+        height: 6vh;
+        margin-left: 16vw;
+        margin-bottom: 1vw;
+        border-radius: 0.5vw ;
+    }
+ 
+    button img{
+        width: 1.5vw;
+        height: 3vh;
+        margin-left: 0vw;
+    }
+ 
+    button:hover{
+        background-color: #8B4513;
+    }
+ 
+    /*ajeitar tamanho imagens por divs*/
+ 
+    #Contato{
+        height: 100vh;
+    }
+
+    #formContato{
+        width: 40vw;
+        background-color: #CD853F;
+        float: right;
+        margin-right: 20vw;
+        margin-top: 10vh;
+    }
+
+    #titContato{
+        margin-left: 10vw;
+        margin-bottom: 1vh;
+    }
+
+    #titContato label{
+        font-size: 1.1em;
+    }
+
+    #txtContato{
+        margin-left: 6vw;
+        color: fff;
+    }
+
+    #txtContato textarea{
+        background-color: #FAFAD2;
+        height: 5vh;
+        width: 20vw;
+    }
+
+    #txtContato textarea:hover{
+        background-color: #FFDEAD;
+    } 
+
+    #buttonContato{
+        margin-left: 10vw;
+    }
+
+    #buttonContato button{
+        background-color: #FAFAD2;
+        height: 4vh;
+        width: 4vw;
+    }
+
+    #buttonContato button:hover{
+        background-color: #8B4513;
+        color: #fff;
+    }
+
+    #imgSContato{
+        margin-left: 10vw;
+        width: 20vw;
+       
+    }
+
+    #imgSContato img{
+        width: 14vw;
+        height: 28vh;
+    }
+
+    #imgS2-contato{
+        width: 40vw;
+        float: right;
+        margin-right: 3vw;
+        margin-top: 2vh;
+    }
+
+    #imgS2-contato img{
+        width: 16vw;
+        height: 32vh;
+    }
+
+    footer{
+        width: 100vw;
+        height: 20vh;
+        background-color: 	#A9A9A9;
+        margin-top: 3vh;
+    }
+ 
+    .caixaP-Rodape{
+        width: 15vw;
+        display: inline-block;
+        margin-left: 4vw;
+        margin-top: 3vh;
+    }
+
+    .caixaP-Rodape h4{
+        margin-bottom: 1vh;
+        text-align: center;
+        color: #fff;
+    }
+
+    .caixaP-Rodape p{
+        margin-bottom: 0.5vh;
+        color: #fff;
+    }
+
+    #imgRodape{
+        width: 9vw;
+        background-color: #8B4513;
+        float: right;
+        margin-right: 4vw;
+        margin-top: 4vh;
+        
+    }
+
+    #imgRodape img{
+        width: 4vw;
+        height: 8vh;
+    }
+
+    #fraseRodape{	
+        width: 100vw;
+        height: 5vh;
+        margin-top: 2vh;
+        background-color:#1C1C1C;
+        color: #fff;
+    }
+
+    #fraseRodape p{
+        color: #fff;
+        padding: 1.5vh;
+        font-size: 1em;
+    }
+ 
+ 
+/*:)*/
+ 
+ 
+}
+ 
+@media only screen and (max-width:479px){
+    label .menu {
+        position: absolute;
+        right: -100px;
+        top: -100px;
+        z-index: 100;
+        width: 200px;
+        height: 20px;
+        background: #FFF;
+        border-radius: 50% 50% 50% 50%;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+        cursor: pointer;
+        
+      }
+      
+      label .hamburger {
+        position: absolute;
+        top: 135px;
+        left: 50px;
+        width: 30px;
+        height: 2px;
+        background: #69D2e7;
+        display: block;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+      }
+      
+      label .hamburger:after, label .hamburger:before {
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #69d2e7;
+      }
+      
+      label .hamburger:before { top: -10px; }
+      
+      label .hamburger:after { bottom: -10px; }
+      
+      label input { display: none; }
+      
+      label input:checked + .menu {
+        box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+        border-radius: 0;
+        
+      }
+      
+      label input:checked + .menu .hamburger {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        
+      }
+      
+      label input:checked + .menu .hamburger:after {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        bottom: 0;
+        
+      }
+      
+      label input:checked + .menu .hamburger:before {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        top: 0;
+        
+      }
+      
+      label input:checked + .menu + ul { opacity: 1; }
+      
+      label ul {
+        z-index: 200;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        -webkit-transition: .25s 0s ease-in-out;
+        transition: .25s 0s ease-in-out;
+      }
+      
+      label a {
+        margin-bottom: 1em;
+        display: block;
+        color: #f38630;
+        text-decoration: none;
+        
+      }
+    /**/
+    #logo{
+        width: 100vw;
+        height: 100vh;
+        background-color: #CD853F;;
+        margin-bottom: 0.5vh;
+    }
+ 
+    #logo img{
+        width: 90vw;
+        height: 45vh;
+    }
+    body{
+        width: 100vw;
+        background-color: #FAFAD2;
+    }
+
+    nav{
+        display: none;
+    }
+ 
+    div h1{
+        margin-left: 16vh;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+    }
+ 
+    div img{
+        width: 35vw;
+        height: 25vh;
+        margin-left: 2.5vw;
+        margin-bottom: 1vh;
+        margin-top: 1.5vh;
+    }
+ 
+    div p{
+        margin-left: 2vw;
+        margin-right: 2vw;
+        text-align: center;
+    }
+ 
+    #Home{
+        height: 100vh;
+    }
+ 
+    #imagemHome{
+        margin-bottom: 3vh;
+    }
+
+    #imagemHome img{
+        width: 60vw;
+        height: 30vh;
+        margin-left: 15vw;
+    }
+
+    #textoHome{
+        margin-left: 2vw;
+        margin-right: 5vw;
+    }
+
+    #textoHome p{
+        margin-bottom: 3vh;
+    }
+
+    
+       
+    #Compre{
+        background-color: #fff;
+        height: 625vh;
+    }
+
+    .fraseCompra{
+        background-color: #CD853F;
+        margin-bottom: 0.5vh;
+       
+    }
+ 
+    .produto{
+        width: 40vw;
+        background-color: #FAFAD2;
+        margin-left: 6.7vw;
+        float: left;
+        margin-bottom: 2vh
+    }
+
+    .imagemComprar img{
+        width: 35vw;
+        height: 17.5vh;
+    }
+
+    button{
+        margin-left: 28vw;
+        width: 8vw;
+        height: 4vh;
+    }
+
+    button img{
+        width: 6vw;
+        height: 3vh;
+        margin-left: 0vw;
+        margin-top: 0.3vh;
+    }
+
+    button:hover{
+        background-color: #8B4513;
+    }
+ 
+    #Contato{
+        height: 130vh;
+    }
+ 
+    #formContato{
+        background-color: #CD853F;
+        width: 100vw;
+    }
+
+    #titContato{
+        margin-left: 23vw;
+        margin-bottom: 2vh;
+    }
+
+    #titContato label{
+        font-size: 1.2em;
+    }
+
+    #txtContato{
+        margin-left: 10.5vw;
+    }
+
+    #txtContato textarea{
+        background-color: #FAFAD2;
+        height: 6vh;
+        width: 70vw;
+    }
+
+    #txtContato textarea:hover{
+        background-color: #FFDEAD;
+    } 
+
+    #buttonContato{
+        margin-left: 44vw;
+        margin-top: 1vh;
+    }
+
+    #buttonContato button{
+        background-color: #FAFAD2;
+        height: 4vh;
+        width: 13vw;
+    }
+
+    #buttonContato button:hover{
+        background-color: #8B4513;
+        color: #fff;
+    }
+
+    #imgSContato{
+        margin-left: 8vw;
+       
+    }
+
+    #imgS2-contato{
+        margin-bottom: 2vh;
+    }
+
+    #imgS2-contato img{
+        margin-left: 13vw;
+        width:70vw;
+        height: 35vh;
+    }
+
+    footer{
+        width: 100vw;
+        height: 75vh;
+        background-color: 	#A9A9A9;
+        margin-top: 3vh;
+    }
+ 
+    .caixaP-Rodape{
+        width: 50vw;
+        display: block;
+        margin-left: 23vw;
+        margin-top: 3vh;
+    }
+
+    .caixaP-Rodape h4{
+        margin-bottom: 1vh;
+        text-align: center;
+        color: #fff;
+    }
+
+    .caixaP-Rodape p{
+        margin-bottom: 0.5vh;
+        color: #fff;
+    }
+
+    #imgRodape{
+        width: 17vw;
+        background-color: #8B4513;
+        margin-left: 40vw;
+        margin-top: 4vh;
+    }
+
+    #imgRodape img{
+        width: 12vw;
+        height: 6vh;
+    }
+
+    #fraseRodape{	
+        width: 100vw;
+        height: 5vh;
+        margin-top: 2vh;
+        background-color:#1C1C1C;
+        color: #fff;
+    }
+
+    #fraseRodape p{
+        color: #fff;
+        padding: 1.5vh;
+        font-size: 1em;
+    }
+ 
+}
+
+@media only screen and (min-width:480px) and (max-width:768px){
+    label .menu {
+        position: absolute;
+        right: -100px;
+        top: -100px;
+        z-index: 100;
+        width: 200px;
+        height: 20px;
+        background: #FFF;
+        border-radius: 50% 50% 50% 50%;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+        cursor: pointer;
+        
+      }
+      
+      label .hamburger {
+        position: absolute;
+        top: 135px;
+        left: 50px;
+        width: 30px;
+        height: 2px;
+        background: #69D2e7;
+        display: block;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+      }
+      
+      label .hamburger:after, label .hamburger:before {
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #69d2e7;
+      }
+      
+      label .hamburger:before { top: -10px; }
+      
+      label .hamburger:after { bottom: -10px; }
+      
+      label input { display: none; }
+      
+      label input:checked + .menu {
+        box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+        border-radius: 0;
+        
+      }
+      
+      label input:checked + .menu .hamburger {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        
+      }
+      
+      label input:checked + .menu .hamburger:after {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        bottom: 0;
+        
+      }
+      
+      label input:checked + .menu .hamburger:before {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        top: 0;
+        
+      }
+      
+      label input:checked + .menu + ul { opacity: 1; }
+      
+      label ul {
+        z-index: 200;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        -webkit-transition: .25s 0s ease-in-out;
+        transition: .25s 0s ease-in-out;
+      }
+      
+      label a {
+        margin-bottom: 1em;
+        display: block;
+        color: #f38630;
+        text-decoration: none;
+        
+      }
+
+    #logo{
+        width: 100vw;
+        height: 200vh;
+        background-color: #CD853F;
+        margin-bottom: 0.5vh;
+        align-items: center;
+    }
+ 
+    #logo img{
+        width: 45vw;
+        height: 90vh;
+        margin-left: 26vw;
+        padding: 3vh;
+    }
+
+    nav{
+        display: none;
+    }
+
+    body{
+        background-color: #FAFAD2;
+    }
+
+    /**/
+ 
+    div h1{
+        margin-left: 16vh;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+        text-shadow: 0.1vw 0.1vw #DEB887;
+    }
+ 
+    div img{
+        width: 25vw;
+        height: 50vh;
+        margin-left: 2.5vw;
+        margin-bottom: 1vh;
+        margin-top: 1.5vh;
+    }
+ 
+    div p{
+        margin-left: 2vw;
+        margin-right: 2vw;
+        text-align: center;
+    }
+ 
+    #Home{
+        height: 100vh;
+    }
+
+    #imagemHome{
+        width: 20vw;
+        height: 43vh;
+        display: inline-block;
+        margin-left: 15vw;
+        margin-top: 4vw;
+    }
+ 
+    #imagemHome img{
+        width: 20vw;
+        height: 40vh;
+        margin-left: 0vw;
+    }
+ 
+    #textoHome{
+        width: 45vw;
+        background-color: #DEB887;
+        float: right;
+        margin-right: 14vw;
+        margin-top: 14vh;
+    }
+ 
+    #textoHome p{
+        margin-bottom: 1vw;
+    }
+ 
+    .imagem{
+        background-color: #CD853F;
+        margin-bottom: 1vh;
+    }
+ 
+    #Compre{
+        height: 500vh;
+        background-color: #fff;
+    }
+ 
+    .imagemComprar img{
+        width: 15vw;
+        height: 30vh;
+        margin-top: 2vw;
+    }
+ 
+    .fraseCompra{
+        background-color: #CD853F;
+        margin-bottom: 0.5vh;
+    }
+ 
+    .produto{
+        width: 20vw;
+        background-color: #FAFAD2;
+        float: left;
+        margin-left: 3.7vw;
+        margin-bottom: 3vh;
+    }
+   
+    button{
+        width: 3vw;
+        height: 6vh;
+        margin-left: 16vw;
+        margin-bottom: 1vw;
+        border-radius: 0.5vw ;
+    }
+ 
+    button img{
+        width: 1.5vw;
+        height: 3vh;
+        margin-left: 0vw;
+    }
+ 
+    button:hover{
+        background-color: #8B4513;
+    }
+ 
+    /*ajeitar tamanho imagens por divs*/
+ 
+    #Contato{
+        height: 1000vh;
+    }
+
+    #formContato{
+        width: 100vw;
+        background-color: #CD853F;
+        float: right;
+        margin-top: 10vh;
+    }
+
+    #titContato{
+        margin-left: 34vw;
+        margin-bottom: 1vh;
+    }
+
+    #titContato label{
+        font-size: 1.1em;
+    }
+
+    #txtContato{
+        margin-left: 10vw;
+        color: fff;
+    }
+
+    #txtContato textarea{
+        background-color: #FAFAD2;
+        height: 10vh;
+        width: 80vw;
+    }
+
+    #txtContato textarea:hover{
+        background-color: #FFDEAD;
+    } 
+
+    #buttonContato{
+        margin-left: 71vw;
+    }
+
+    #buttonContato button{
+        background-color: #FAFAD2;
+        height: 5vh;
+        width: 8vw;
+    }
+
+    #buttonContato button:hover{
+        background-color: #8B4513;
+        color: #fff;
+    }
+
+    #imgSContato{
+        width: 80vw;
+        float: right;
+    }
+
+    #imgSContato img{
+        width: 20vw;
+        height: 40vh;
+        margin-top: 12vh;
+    }
+
+    #imgS2-contato{
+        width: 100vw;
+        float: right;
+        margin-top: 2vh;
+    }
+
+    #imgS2-contato img{
+        width: 28vw;
+        height: 56vh;
+        margin-left: 12vw;
+    }
+
+    footer{
+        width: 100vw;
+        height: 70vh;
+        background-color: 	#A9A9A9;
+        margin-top: 10vh;
+    }
+ 
+    .caixaP-Rodape{
+        width: 25vw;
+        display: inline-block;
+        margin-left: 1vw;
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+    }
+
+    .caixaP-Rodape h4{
+        margin-bottom: 1vh;
+        text-align: center;
+        color: #fff;
+    }
+
+    .caixaP-Rodape p{
+        margin-bottom: 0.5vh;
+        color: #fff;
+    }
+
+    #imgRodape{
+        width: 10vw;
+        background-color: #8B4513;
+        float: right;
+        margin-right: 20vw;
+        
+    }
+
+    #imgRodape img{
+        width: 4vw;
+        height: 8vh;
+    }
+
+    #fraseRodape{	
+        width: 100vw;
+        height: 8vh;
+        margin-top: 2vh;
+        background-color:#1C1C1C;
+        color: #fff;
+    }
+
+    #fraseRodape p{
+        color: #fff;
+        padding: 1.5vh;
+        font-size: 1em;
+    }
+ 
+ 
+/*:)*/
+ 
+ 
+}
+
